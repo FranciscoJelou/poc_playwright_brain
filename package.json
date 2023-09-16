@@ -1,0 +1,14 @@
+{
+  "name": "poc_playwright_brain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@applitools/eyes-playwright": "^1.17.19",
+    "@playwright/test": "^1.36.1"
+  }
+}
