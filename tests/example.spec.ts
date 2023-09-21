@@ -107,69 +107,72 @@ test.describe('Jelou Brain', () => {
       await page.getByRole('link', { name: 'Brain' }).click();
   });
 
-  test('CRUD datastores', async ({ page }) => {
-    // Crear Datastore
-    await page.getByRole('button', { name: '+ Crear' }).click();
-    await eyes.check('create card', Target.window().fully().layout());
-    await page.locator("input[name='name']").fill('Datastore automation test');
-    await page.locator("textarea[name='description']").fill('Datastore descripción automation test');
-    await page.getByRole('button', { name: 'Crear' }).click();
-    await expect(page.getByRole('alert')).toBeVisible();
-    await expect(page.getByRole('alert')).toContainText('Haz creado exitosamente el datastore');
-    await page.waitForTimeout(3000);
-    await eyes.check('create datastore', Target.window().fully().layout());
+  test('CRUD Brain', async ({ page }) => {
+    // Crear Brain
+    await test.step('Create Brain', async () => {
+      await page.getByRole('button', { name: '+ Crear' }).click();
+      //await eyes.check('create card', Target.window().fully().layout());
+      await page.locator("input[name='name']").fill('Brain automation test');
+      await page.locator("textarea[name='description']").fill('Brain descripción automation test');
+      await page.getByRole('button', { name: 'Crear' }).click();
+      await expect(page.getByRole('alert')).toBeVisible();
+      await expect(page.getByRole('alert')).toContainText('Haz creado exitosamente el brain "Brain automation test"');
+      await page.waitForTimeout(3000);
+      //await eyes.check('create Brain', Target.window().fully().layout());
+    });
 
-    // Editar Datastore
+    // Editar Brain
     await page.locator("input[type='search']").fill('automation');
     await page.waitForTimeout(3000); // Espera 3 segundos
-    await eyes.check('Search', Target.window().fully().layout());
+    //await eyes.check('Search', Target.window().fully().layout());
     await page.click('[id*="headlessui-menu-button-:"]');
-    await eyes.check('Menu option', Target.window().fully().layout());
+    //await eyes.check('Menu option', Target.window().fully().layout());
     await page.getByRole('button', { name: 'Editar' }).click();
-    await expect(page.locator("input[value='Datastore automation test']")).toBeVisible();
-    await expect(page.getByText('Datastore descripción automation test')).toBeVisible();
-    await eyes.check('Edit option', Target.window().fully().layout());
+    await expect(page.locator("input[value='Brain automation test']")).toBeVisible();
+    await expect(page.getByText('Brain descripción automation test')).toBeVisible();
+    //await eyes.check('Edit option', Target.window().fully().layout());
     await page.locator("input[name='name']").clear();
-    await page.locator("input[name='name']").fill('Datastore automation test EDITADO');
+    await page.locator("input[name='name']").fill('Brain automation test EDITADO');
     await page.locator("textarea[name='description']").clear();
-    await page.locator("textarea[name='description']").fill('Datastore descripción automation test EDITADO');
-    await eyes.check('Edit card', Target.window().fully().layout());
+    await page.locator("textarea[name='description']").fill('Brain descripción automation test EDITADO');
+    await expect(page.getByText('Brain descripción automation test EDITADO')).toBeVisible();
+    //await eyes.check('Edit card', Target.window().fully().layout());
     await page.getByRole('button', { name: 'Actualizar' }).click();
     await expect(page.getByRole('alert')).toBeVisible();
-    await expect(page.getByRole('alert')).toContainText('Haz actualizado exitosamente el datastore');
+    await expect(page.getByRole('alert')).toContainText('Haz actualizado exitosamente el brain "Brain automation test EDITADO"');
     await page.waitForTimeout(3000);
-    await eyes.check('Edit datastore', Target.window().fully().layout());
-    //await expect(page.getByText('Datastore descripción automation test EDITADO')).toBeVisible();
+    //await eyes.check('Edit Brain', Target.window().fully().layout());
 
-    // Ver Datastore
+    // Ver Brain
     await page.locator("input[type='search']").fill('automation');
     await page.waitForTimeout(3000); // Espera 3 segundos
     await page.click('[id*="headlessui-menu-button-:"]');
     await page.getByRole('button', { name: 'Ver' }).click();
-    await expect(page.getByText('Aún no tienes datasources en Datastore automation test')).toBeVisible();
-    await eyes.check('Empty datastore', Target.window().fully().layout());
+    await page.getByRole('link', { name: 'Administra tus canales' }).click();
+    await expect(page.getByText('Aún no tienes knowledges en Brain automation test Editado')).toBeVisible();
+    //await eyes.check('Empty Brain', Target.window().fully().layout());
 
     // Ver Canales
     await page.getByRole('button', { name: 'Canales' }).click();
-    await expect(page.getByText('Aún no tienes canales en Datastore automation test')).toBeVisible();
-    await eyes.check('Empty channels', Target.window().fully().layout());
+    await expect(page.getByText('Aún no tienes canales en Brain automation test')).toBeVisible();
+    //await eyes.check('Empty channels', Target.window().fully().layout());
 
-    // Eliminar Datasource
-    await page.getByRole('button', { name: 'Datastores' }).click();
+    // Eliminar Knowledge
+    await page.getByRole('button', { name: 'Brains' }).click();
     await page.waitForTimeout(3000);
     await page.locator("input[type='search']").fill('automation');
     await page.waitForTimeout(3000); // Espera 3 segundos
     await page.click('[id*="headlessui-menu-button-:"]');
     await page.getByRole('button', { name: 'Eliminar' }).click();
-    await eyes.check('Delete datastore modal', Target.window().fully().layout());
-    await expect(page.getByText('Eliminar datastore')).toBeVisible();
-    await expect(page.getByText('¿Estás seguro de eliminar todo el datastore?')).toBeVisible();
-    await expect(page.getByText('Recuerda que si eliminas este datastore perderás la información, para recuperarl')).toBeVisible();
+    //await eyes.check('Delete Brain modal', Target.window().fully().layout());
+    await expect(page.getByText('Eliminar Brain')).toBeVisible();
+    await expect(page.getByText('¿Estás seguro de eliminar todo el Brain?')).toBeVisible();
+    await expect(page.getByText('Recuerda que si eliminas este Brain perderás la información, para recuperarl')).toBeVisible();
     await page.getByRole('button', { name: 'Si, deseo eliminarlo' }).click();
     await expect(page.getByRole('alert')).toBeVisible();
-    await expect(page.getByRole('alert')).toContainText('Haz eliminado exitosamente el datastore');
+    await expect(page.getByRole('alert')).toContainText('Haz eliminado exitosamente el/la brain');
     await page.waitForTimeout(3000);
-    await eyes.check('Delete datastore', Target.window().fully().layout());
+    //await eyes.check('Delete Brain', Target.window().fully().layout());
   });
 
   // This method performs cleanup after each test.

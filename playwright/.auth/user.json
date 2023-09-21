@@ -2,10 +2,10 @@
   "cookies": [
     {
       "name": "__cf_bm",
-      "value": "LL2b2HWJMwgNZ9JgXL2G4Jzm7TIkAOALdHqLSRlqNTE-1691799887-0-AdZGbeeuFyLfSyvsiCYy8WiY+l0UVqttoDGUsPRDau2M5JU+ucN7yXbgmsT64vgqDQaQ7r1fgKmIPUgsSbigi6U=",
+      "value": "2q2PON.W14EWbiDUknkgcUFtdvV6PdqaSKvsfH6wUAs-1695310348-0-Aam8bjShwOwcmhkJ/ofRBFOfTvPxXcghAozPN3Fw9I6gjG1/H196AQXi5bdLjYr80nOz9ECRxrnfiaB4Dg3o+J0=",
       "domain": ".onesignal.com",
       "path": "/",
-      "expires": 1691801687.698813,
+      "expires": 1695312147.880889,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -21,15 +21,11 @@
         },
         {
           "name": "jwt",
-          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDAzNCwibmFtZXMiOiJGcmFuY2lzY28gQ2FiZXphcyIsImxhbmciOiJlcyIsImVtYWlsIjoiZnJhbmNpc2NvQGplbG91LmFpIiwiZW1haWxWZXJpZmllZCI6bnVsbCwiY29tcGFueUlkIjoxMzUsImFjdGl2ZSI6Im9mZmxpbmUiLCJzdGF0ZSI6MSwicHJvdmlkZXJJZCI6IjkxZjkxY2U2LWEyZDMtNGJjZC04YzljLWNiNGMzYjc4ZGNmMSIsImV4dGVybmFsVG9rZW4iOiI4MzRiZTYwNy1jM2VjLTQ3MDAtYmMzNi01MDkwNjY2MDNhOWUiLCJvcGVyYXRvckFjdGl2ZSI6Im9mZmxpbmUiLCJjcmVhdGVkQnkiOjk5LCJwcm9wZXJ0aWVzIjpudWxsLCJzaG91bGRSZWNlaXZlRW1haWwiOm51bGwsImlzTWlncmF0ZWQiOjAsImlzT3BlcmF0b3IiOjEsIm9wZXJhdG9ySWQiOjMzOTksInRpbWV6b25lIjoiQW1lcmljYS9Cb2dvdGEiLCJtb25pdG9yQWxsVGVhbXMiOjEsImxvZ2dlZEluQXQiOiIyMDIzLTA4LTExVDE1OjMwOjUzLjAwMFoiLCJsb2dnZWRPdXRBdCI6IjIwMjMtMDgtMTBUMTg6NTU6MDEuMDAwWiIsImRlbGV0ZWRBdCI6bnVsbCwiY3JlYXRlZEF0IjoiMjAyMy0wMi0wNlQyMToxOTo0Mi4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wOC0xMVQyMDozMDo1My4wMDBaIiwiT3BlcmF0b3IiOnsiaWQiOjMzOTksIm5hbWVzIjoiRnJhbmNpc2NvIENhYmV6YXMiLCJlbWFpbCI6ImZyYW5jaXNjb0BqZWxvdS5haSIsInByb3BlcnRpZXMiOm51bGwsImNvbXBhbnlJZCI6MTM1LCJzdGF0ZSI6MSwiYWN0aXZlIjoxLCJwcm92aWRlcklkIjoiOTFmOTFjZTYtYTJkMy00YmNkLThjOWMtY2I0YzNiNzhkY2YxIiwibG9nZ2VkT3V0QXQiOiIyMDIzLTA4LTEwVDE4OjU1OjAxLjAwMFoiLCJsb2dnZWRJbkF0IjoiMjAyMy0wOC0xMSAxOToyNDo1MSIsInNlc3Npb25JZCI6IjZ1QWF5OFVOViIsInVuaXF1ZVNlc3Npb24iOmZhbHNlfSwic2Vzc2lvbklkIjoiNnVBYXk4VU5WIiwidW5pcXVlU2Vzc2lvbiI6ZmFsc2UsImlhdCI6MTY5MTc5OTg5MSwiZXhwIjoxNjkxODQzMDkxfQ.QVRPQgBDmQ-W7Dfz4iRqpkKVKYzP5-uuuCLwHfvlllU"
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDAzNCwibmFtZXMiOiJGcmFuY2lzY28gQ2FiZXphcyIsImxhbmciOiJlcyIsImVtYWlsIjoiZnJhbmNpc2NvQGplbG91LmFpIiwiZW1haWxWZXJpZmllZCI6bnVsbCwiY29tcGFueUlkIjoxMzUsImFjdGl2ZSI6Im9mZmxpbmUiLCJzdGF0ZSI6MSwicHJvdmlkZXJJZCI6IjkxZjkxY2U2LWEyZDMtNGJjZC04YzljLWNiNGMzYjc4ZGNmMSIsImV4dGVybmFsVG9rZW4iOiI4MzRiZTYwNy1jM2VjLTQ3MDAtYmMzNi01MDkwNjY2MDNhOWUiLCJvcGVyYXRvckFjdGl2ZSI6Im9mZmxpbmUiLCJjcmVhdGVkQnkiOjk5LCJwcm9wZXJ0aWVzIjpudWxsLCJzaG91bGRSZWNlaXZlRW1haWwiOm51bGwsImlzTWlncmF0ZWQiOjAsImlzT3BlcmF0b3IiOjEsIm9wZXJhdG9ySWQiOjMzOTksInRpbWV6b25lIjoiQW1lcmljYS9HdWF5YXF1aWwiLCJtb25pdG9yQWxsVGVhbXMiOjEsImxvZ2dlZEluQXQiOiIyMDIzLTA5LTIxVDEwOjI0OjIwLjAwMFoiLCJsb2dnZWRPdXRBdCI6IjIwMjMtMDktMjBUMDk6NTA6MDIuMDAwWiIsImRlbGV0ZWRBdCI6bnVsbCwiY3JlYXRlZEF0IjoiMjAyMy0wMi0wNlQyMToxOTo0Mi4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMy0wOS0yMVQxNToyNDoyMC4wMDBaIiwiT3BlcmF0b3IiOnsiaWQiOjMzOTksIm5hbWVzIjoiRnJhbmNpc2NvIENhYmV6YXMiLCJlbWFpbCI6ImZyYW5jaXNjb0BqZWxvdS5haSIsInByb3BlcnRpZXMiOm51bGwsImNvbXBhbnlJZCI6MTM1LCJzdGF0ZSI6MSwiYWN0aXZlIjoxLCJwcm92aWRlcklkIjoiOTFmOTFjZTYtYTJkMy00YmNkLThjOWMtY2I0YzNiNzhkY2YxIiwibG9nZ2VkT3V0QXQiOiIyMDIzLTA5LTIwVDA5OjUwOjAyLjAwMFoiLCJsb2dnZWRJbkF0IjoiMjAyMy0wOS0yMSAxMDozMjozMCIsInNlc3Npb25JZCI6IkcwaVBZS282MyIsInVuaXF1ZVNlc3Npb24iOmZhbHNlfSwic2Vzc2lvbklkIjoiRzBpUFlLbzYzIiwidW5pcXVlU2Vzc2lvbiI6ZmFsc2UsImlhdCI6MTY5NTMxMDM1MCwiZXhwIjoxNjk1MzUzNTUwfQ.jkJEWkhjVk4Ukz1OoG3LYiv4l8KjnMAChLFKV7U-HVQ"
         },
         {
           "name": "jelou:widget:id:user",
-          "value": "05e3b146-9719-46bc-96e0-b33368c559a5"
-        },
-        {
-          "name": "campaignId",
-          "value": "0"
+          "value": "e86ba119-9a81-48b5-9a2f-5cf22c325676"
         },
         {
           "name": "lang",
@@ -37,7 +33,7 @@
         },
         {
           "name": "cachedIpAddress",
-          "value": "{\"ip\":\"181.135.150.26\",\"timestamp\":1691799891283}"
+          "value": "{\"ip\":\"181.135.150.26\",\"timestamp\":1695310350286}"
         },
         {
           "name": "i18nextLng",
@@ -45,7 +41,7 @@
         },
         {
           "name": "pusherTransportTLS",
-          "value": "{\"timestamp\":1691799892280,\"transport\":\"ws\",\"latency\":339}"
+          "value": "{\"timestamp\":1695310351364,\"transport\":\"ws\",\"latency\":294}"
         },
         {
           "name": "user",
@@ -53,7 +49,7 @@
         },
         {
           "name": "session",
-          "value": "6uAay8UNV"
+          "value": "G0iPYKo63"
         }
       ]
     }
